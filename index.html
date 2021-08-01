@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+body
+{
+  background-image: url('https://jooinn.com/images/thunder-storm-6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.center {
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          width:600px;
+          background:white;
+          border-radius:10px;
+          }
+</style>
+</head>
+<body>
+<center><strong><h1>POWER CONSUMPTION ANALYSIS FOR HOUSEHOLD</h1></strong></center>
+
+<form action = "/guest" method = "post">
+<right>
+<table align="center">
+<tr>
+<td><h2><p style="background-color:DodgerBlue">GLOBAL ACTIVE POWER  </p></h2></td>
+<td><p font-size=50px> <input type = "text" name = "gap"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:Tomato">GLOBAL REACTIVE POWER </p></h2></td>
+<td><p font-size=80px> <input type = "text" name = "grp"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:DodgerBlue">VOLTAGE </p><h2></td>
+<td><p font-size=50px> <input type = "text" name = "v"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:Tomato">GLOBAL INTENSITY </p></h2></td>
+<td><p font-size=50px> <input type = "text" name = "gi"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:DodgerBlue">SUB METERING 1 </p></h2></td>
+<td><p font-size=50px> <input type = "text" name = "s1"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:Tomato">SUB METERING 2 </p></h2></td>
+<td><p font-size=50px> <input type = "text" name = "s2"/> </p></td>
+</tr>
+<tr>
+<td><h2><p style="background-color:DodgerBlue">SUB METERING 3 </p></h2></td>
+<td><p font-size=50px> <input type = "text" name = "s3"/> </p></td>
+</tr>
+<tr>
+<td><h2><p><button type="submit" >Predict</button></p></h2></td>
+</tr>
+</form>
+<p><b>{{y}}</b></p>
+</body>
+</html>
